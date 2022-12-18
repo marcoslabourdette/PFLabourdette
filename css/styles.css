@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 130px;
+}
+header{
+    width: 100%;
+    min-height: 80px;
+    margin-top: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px grey;
+    position: fixed;
+    z-index: 999;
+}
+.titulo-inicio{
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    padding: 5px;
+    gap: 10px;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+.logo img{
+    width: 50px;
+}
+.logo span{
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+.navbar li{
+    list-style: none;
+    display: inline;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    padding: 5px;
+}
+.navbar li a{
+    text-decoration: none;
+    font-weight: 550;
+    padding: 5px;
+    color: black;
+    font-size: 14px;
+}
+.navbar li a:hover{
+    color: rgb(8, 164, 236);
+}
+
+ul.navbar-nav li.nav-item a.active{
+    color: rgb(8, 164, 236);
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler i{
+    height: 2rem;
+    color:rgb(8, 164, 236)
+}
+main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+main h1{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    font-family: Montserrat, sans-serif;
+}
+
+.carousel{
+    width: 80vw;
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+
+.row h4{
+        width: 135px;
+        margin-top: 10px;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: start;
+        border-bottom: 4px solid rgb(8, 164, 236);
+}
+.row h5{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.row img{
+    padding: 5px;
+}
+.row p{
+    font-family: 'Open Sans', sans-serif;
+}
+.seccion{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(8, 164, 236);
+}
+.seccion i{
+    font-size: 60px;
+    margin-top: 30px;
+}
+.seccion h6{
+    font-size: 25px;
+
+}
+.services{
+    text-align: center;
+    margin-top: 15px auto;
+}
+.video{
+    gap: 20px;
+}
+.video h6{
+    margin-top: 90px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+    color: rgb(8, 164, 236);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    color: white;
+    margin-top: 120px;
+    width: 100%;
+    height: 30vh;
+    gap: 5px;
+    background-color:rgb(8, 164, 236);
+}
+footer p{
+    font-family: Montserrat, sans-serif;
+}
+.redes-sociales{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociales a{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin: 15px;
+}
+
+/*CSS PARA PAGINA DE PROYECTOS */ 
+
+.contenedorproyecto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-top: 20px;
+    align-items: baseline;
+    gap: 35px;
+}
+
+.contenedorproyecto__cards{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: rgb(8, 164, 236);
+    border-radius: 10px;
+}
+.contenedorproyecto__cards img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .6s;
+}
+.contenedorproyecto__cards img:hover{
+    transform: scale(1.1);
+    opacity: 50%;
+}
+
+.contenedorproyecto__cards h3{
+    padding: 3px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 30px;
+
+}
+.contenedorproyecto__cards p{
+    color: rgb(8, 164, 236);
+    position: none;
+    font-weight: 800;
+    margin-top: 70px;
+}
+/* TERMINA PAGINA DE PROYECTOS*/
+
+/*CSS PAGINA DE NOVEDADES*/
+.galeria{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.galeria__cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    gap: 10px;
+}
+.galeria__cards h2{
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 3px solid rgb(8, 164, 236);   
+}
+.galeria__cards p{
+    text-align: start;
+    font-size: 15px;
+}
+.galeria__cards img{
+    width: 100%;
+    height: 100%;
+
+}
+/*TERMINA PAGINA DE NOVEDADES*/
+
+/*CSS PAGINA DE CONTACTO*/
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 110px;
+}
+.contacto__container__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.contacto__container__info i{
+    font-size: 35px;
+    color: rgb(8, 164, 236);
+    padding: 5px;
+    margin: 10px;
+}
+
+.contacto__container__info span{
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contacto__formulario{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    padding:10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 164, 236);
+    border-radius: 5px;
+
+}
+.contacto__formulario h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+    font-family: Montserrat, sans-serif;
+}
+.contacto__formulario form{
+        display: flex;
+        width: 100%;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+
+}
+.contacto__formulario input{
+        width: 60%;
+        padding: 10px;
+        margin: 5px;
+        outline: none;
+}
+.textarea{
+    outline: none;
+    resize: none;
+    width: 60%;
+}
+
+.contacto__formulario .btn{
+    background-color: rgb(8, 164, 236);
+    color:white;
+    font-family: Montserrat, sans-serif;
+    width: 80px;
+}
+.contacto__formulario .btn:hover{
+    background-color: rgb(19, 78, 253);
+
+}
+/*TERMINA PAGINA DE CONTACTO*/
+
+/*CSS PAGINA DE AYUDA */
+.ayuda{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ayuda div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.ayuda p{
+    margin-bottom: 100px;
+    width: 70%;
+
+}
+.ayuda h2,h3 {
+    border-bottom: 2px solid rgb(8, 164, 236);
+}
+
+/*TERMINA PAGINA DE AYUDA */
+
+@media screen and (max-width:991px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .logo{
+        margin-right: 20px;
+    }
+    .carousel{
+        width: 100%;
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+    .row h4{
+        margin-top: 40px;
+    }
+    .row h5{
+        margin-top: 30px;
+    }
+    .row img{
+        margin-top: 10px;
+    }
+    #inicio{
+        margin-bottom: 10px;
+    }
+    .video iframe{
+        width: 70%;
+    }
+    }
+@media screen and (max-width:420px){
+    .contenedorproyecto__cards{
+        width: 300px;
+    }
+  
+}
