@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoggyLand | Inicio</title>
+    <title>Inicio | DoggyLand</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
 </head>
 <body>
     <header>
-        <div class="logo text-center">
+        <div class="logo">
             <a href="./index.html"><img src="./assets/images/logo1.png" alt="logo"></a>
             <a href="./index.html"><span>DoggyLand</span></a>
         </div>
@@ -49,11 +49,16 @@
                             <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
+                        </li>
+                        <div class="redsocial">
+                        <li class="nav-item">
                             <a class="nav-link" href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         </li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -89,16 +94,16 @@
             <h1 id="inicio" class="titulo-inicio" data-aos="fade-right">Inicio</h1>
             <div class="row" data-aos="fade-right">
                 <div class="col-sm-12 col-md-12 col-lg-6 text-center">
-                    <img src="./assets/images/golden.jpg" class="img-fluid" alt="perro">
+                    <img src="./assets/images/golden.jpg" class="img-inicio img-fluid" alt="perro">
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <h4>A Subtitle</h4>
+                    <h4 class="inicio-subtitulo">A Subtitle</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, corporis. Magnam amet corporis aut
                         porro possimus alias dolorum sit similique! Lorem ipsum dolor, sit amet consectetur adipisicing
                         elit. Praesentium, voluptatibus?- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Maxime soluta aperiam consequatur magnam, blanditiis tenetur harum
                     </p>
-                    <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                    <h5 class="inicio-description">Lorem ipsum dolor sit amet consectetur.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, corporis. Magnam amet corpori.
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit pariatur similique velit fugiat
                         excepturi mollitia.
@@ -107,8 +112,8 @@
             </div>
         </section>
         <section class="seccion container-fluid text-light text-center" data-aos="fade-right">
-            <div class="row services d-flex justify-content-center">
-                <div class="col-lg-4 col-md-4 col-sm-12">
+            <div id="services" class="row services d-flex justify-content-center">
+                <div class="caja col-lg-4 col-md-4 col-sm-12">
                     <i class="fa-solid fa-tree"></i>
                     <h6>Servicio</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum accusantium error iure doloribus,
@@ -116,7 +121,7 @@
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia.
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="caja col-lg-4 col-md-4 col-sm-12">
                     <i class="fa-solid fa-paw"></i>
                     <h6>Servicio</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum accusantium error iure doloribus,
@@ -124,7 +129,7 @@
                         elit.
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="caja col-lg-4 col-md-4 col-sm-12">
                     <i class="fa-solid fa-bone"></i>
                     <h6>Servicio</h6>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum accusantium error iure doloribus,
@@ -141,7 +146,7 @@
             <div class="text-center">
                 <iframe width="660" height="316" src="https://www.youtube.com/embed/TbgB5zH8_3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </sectio>
+        </section>
     </main>
     <footer>
         <div class="redes-sociales">
@@ -149,6 +154,13 @@
             <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
+        <ul class="text-center">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="./pages/proyectos.html">Proyectos</a></li>
+            <li><a href="./pages/novedades.html">Novedades</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="./pages/ayuda.html">Ayuda</a></li>
+        </ul>
         <div>
             <p>© Todos los derechos reservados.</p>
         </div>

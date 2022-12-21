@@ -5,8 +5,8 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding: 130px;
-}
+    scroll-padding: 115px;
+ }
 header{
     width: 100%;
     min-height: 80px;
@@ -86,32 +86,32 @@ main h1{
     margin-bottom: 50px;
     font-family: Montserrat, sans-serif;
 }
-
 .carousel{
     width: 80vw;
     margin-top: 70px;
     margin-bottom: 110px;
 }
-
-.row h4{
+.inicio-subtitulo{
         margin-top: 10px;
-        font-size: 30px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
         text-align: start;
         border-bottom: 4px solid rgb(8, 164, 236);
 }
-.row h5{
+.inicio-description{
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
-.row img{
+.img-inicio{
     padding: 5px;
 }
 .row p{
     font-family: 'Open Sans', sans-serif;
 }
 .seccion{
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,15 +120,22 @@ main h1{
 }
 .seccion i{
     font-size: 60px;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .seccion h6{
     font-size: 25px;
-
+    font-weight: bold;
+    font-family: 'Montserrat',sans-serif;
+    margin-bottom: 15px;
+}
+.caja{
+    padding: 40px;
 }
 .services{
     text-align: center;
-    margin-top: 15px auto;
+    margin-top: 15px;
+
 }
 .video{
     gap: 20px;
@@ -136,7 +143,7 @@ main h1{
 .video h6{
     margin-top: 90px;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: bold;
     font-family: 'Montserrat',sans-serif;
     color: rgb(8, 164, 236);
 }
@@ -148,9 +155,18 @@ footer{
     color: white;
     margin-top: 120px;
     width: 100%;
-    height: 30vh;
+    height: 200px;
     gap: 5px;
     background-color:rgb(8, 164, 236);
+}
+footer li{
+    list-style: none;
+    display: inline;
+}
+footer li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
 }
 footer p{
     font-family: Montserrat, sans-serif;
@@ -161,6 +177,10 @@ footer p{
     justify-content: center;
     align-items: center;
 }
+.redsocial{
+    display: flex;
+    flex-direction: row;
+}
 .redes-sociales a{
     font-size: 30px;
     text-align: center;
@@ -168,9 +188,7 @@ footer p{
     margin-top: 10px;
     margin: 15px;
 }
-
 /*CSS PARA PAGINA DE PROYECTOS */ 
-
 .contenedorproyecto{
     display: flex;
     justify-content: center;
@@ -178,10 +196,10 @@ footer p{
     border-radius: 10px;
     margin-top: 20px;
     align-items: baseline;
-    gap: 35px;
+    gap: 15px;
 }
-
 .contenedorproyecto__cards{
+    position: relative;
     width: 400px;
     height: 300px;
     display: flex;
@@ -193,35 +211,75 @@ footer p{
     font-family: Montserrat, sans-serif;
     object-fit: cover;
     overflow: hidden;
-    background-color: rgb(8, 164, 236);
-    border-radius: 10px;
 }
 .contenedorproyecto__cards img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    transition: .6s;
 }
-.contenedorproyecto__cards img:hover{
-    transform: scale(1.1);
-    opacity: 50%;
-}
-
-.contenedorproyecto__cards h3{
-    padding: 3px;
+.info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
     position: absolute;
-    font-weight: 600;
-    font-size: 30px;
-
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 164, 236,0.3);
+    opacity: 0;
+    box-shadow: 20px solid red;
+    border-radius: 10px;
+    visibility: hidden;
+    transition: 1s;
 }
-.contenedorproyecto__cards p{
+.info a{
+    text-decoration: none;
+}
+.info h4{
+    color: white;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 1s;
+}
+.info h4:hover{
     color: rgb(8, 164, 236);
-    position: none;
-    font-weight: 800;
-    margin-top: 70px;
+}
+.contenedorproyecto__cards:hover > .info{
+    opacity: 1;
+    visibility: visible;
+}
+.project-example{
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(8, 164, 236);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+}
+.project-title{
+    font-size: 25px;
+    color: rgb(8, 164, 236);
+    font-weight: bold;
+}
+.project-info{
+    margin-top: 30px;
+}
+.project-img{
+    margin-top: 50px;
+}
+.project-parrafo{
+    margin-top: 20px;
+    font-size: 15px;
 }
 /* TERMINA PAGINA DE PROYECTOS*/
-
 /*CSS PAGINA DE NOVEDADES*/
 .galeria{
     display: flex;
@@ -229,18 +287,19 @@ footer p{
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
+    margin-top: 30px;
 }
-
 .galeria__cards{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 400px;
     height: 500px;
-    gap: 10px;
+    margin: 15px;
 }
 .galeria__cards h2{
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 25px;
     text-align: center;
     border-bottom: 3px solid rgb(8, 164, 236);   
 }
@@ -251,15 +310,13 @@ footer p{
 .galeria__cards img{
     width: 100%;
     height: 100%;
-
 }
 /*TERMINA PAGINA DE NOVEDADES*/
-
 /*CSS PAGINA DE CONTACTO*/
 .contacto{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 110px;
 }
@@ -291,13 +348,12 @@ footer p{
     justify-content: center;
     align-items: center;
     background-color: rgb(8, 164, 236);
-    border-radius: 5px;
 
 }
 .contacto__formulario h2{
     margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
     color: white;
     border-bottom: 2px solid white;
@@ -312,38 +368,49 @@ footer p{
 
 }
 .contacto__formulario input{
-        width: 60%;
+        width: 70%;
+        font-size: 1rem;
+        font-family:'Helvetica', Arial, Lucida Grande, sans-serif; 
+        outline: none;
         padding: 10px;
         margin: 5px;
-        outline: none;
+}
+.contacto-nombres{
+    width: 72%;
 }
 .textarea{
     outline: none;
     resize: none;
-    width: 60%;
+    font-size: 1rem;
+    font-family:'Helvetica', Arial, Lucida Grande, sans-serif; 
+    text-align: start;
+    width: 70%;
+    min-height: 220px;
+    line-height: 1cm;
 }
-
-.contacto__formulario .btn{
+.contacto__formulario .boton{
     background-color: rgb(8, 164, 236);
     color:white;
-    font-family: Montserrat, sans-serif;
-    width: 80px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 85px;
 }
-.contacto__formulario .btn:hover{
-    background-color: rgb(19, 78, 253);
-
+.contacto__formulario .boton:hover{
+    color: rgb(8, 164, 236);
+    border: 1px solid rgb(8, 164, 236);
+    background-color: white;
 }
 /*TERMINA PAGINA DE CONTACTO*/
 
 /*CSS PAGINA DE AYUDA */
-.ayuda{
+.seccion-ayuda{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.ayuda div{
+.seccion-ayuda div{
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -351,13 +418,13 @@ footer p{
     align-items: center;
     gap: 15px;
 }
-.ayuda p{
+.seccion-ayuda p{
     margin-bottom: 100px;
     width: 70%;
 
 }
-.ayuda h2,h3 {
-    border-bottom: 2px solid rgb(8, 164, 236);
+.seccion-ayuda h2,h3 {
+    border-bottom: 5px solid rgb(8, 164, 236);
 }
 
 /*TERMINA PAGINA DE AYUDA */
@@ -370,6 +437,7 @@ footer p{
     .logo{
         margin-right: 20px;
     }
+    /*PAGINA INICIO*/
     .carousel{
         width: 100%;
         margin-top: 120px;
@@ -390,10 +458,47 @@ footer p{
     .video iframe{
         width: 70%;
     }
+    .redsocial{
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+     }
+     /* PAGINA NOVEDADES*/ 
+     .galeria__cards{
+        margin: 20px;
     }
+      /*PAGINA CONTACTO*/
+      .contacto{
+        flex-direction: column;
+      }
+      .contacto-nombres{
+        flex-direction: column;
+      }
+      .contacto__container iframe{
+        width: 100%;
+
+    }
+    .contacto__formulario{
+        width: 90%;
+    }
+  
+}
 @media screen and (max-width:420px){
+    /*PAGINA PROYECTOS*/
     .contenedorproyecto__cards{
-        width: 300px;
+        width: 350px;
     }
+     /* PAGINA NOVEDADES*/ 
+     .galeria{
+        margin-top: 0;
+     }
+     .galeria__cards{
+        margin-top: 40px;
+        padding: 20px;
+    }
+    footer ul{
+        display: none;
+    }
+    
   
 }
