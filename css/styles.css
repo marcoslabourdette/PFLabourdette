@@ -194,7 +194,7 @@ footer p{
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
     align-items: baseline;
     gap: 15px;
 }
@@ -251,8 +251,16 @@ footer p{
     opacity: 1;
     visibility: visible;
 }
+.carousel-proyecto{
+    width: 70%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
 .project-example{
-    margin-top: 20px;
+    margin-bottom: 0;
     color: white;
     background-color: rgb(8, 164, 236);
     font-family: 'Montserrat', sans-serif;
@@ -263,6 +271,20 @@ footer p{
     padding-top: 35px;
     padding-bottom: 35px;
     width: 100%;
+}
+.project-example-first{
+    margin-top: 80px;
+    margin-bottom: 0;
+    color: white;
+    background-color: rgb(8, 164, 236);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 70%;
 }
 .project-title{
     font-size: 25px;
@@ -286,7 +308,7 @@ footer p{
     justify-content:center;
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     margin-top: 30px;
 }
 .galeria__cards{
@@ -295,7 +317,6 @@ footer p{
     flex-direction: column;
     width: 400px;
     height: 500px;
-    margin: 15px;
 }
 .galeria__cards h2{
     font-weight: bold;
@@ -403,30 +424,40 @@ footer p{
 /*TERMINA PAGINA DE CONTACTO*/
 
 /*CSS PAGINA DE AYUDA */
-.seccion-ayuda{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.project-ayuda{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: rgb(8, 164, 236);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 70%;
+    text-align: center;
 }
-.seccion-ayuda div{
-    width: 80%;
+.seccion-ayuda{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    flex-direction: column;
 }
 .seccion-ayuda p{
     margin-bottom: 100px;
     width: 70%;
 
 }
+
 .seccion-ayuda h2,h3 {
     border-bottom: 5px solid rgb(8, 164, 236);
 }
-
+.seccion-ayuda h3{
+    font-size: 25px;
+    text-align: center;
+ }
 /*TERMINA PAGINA DE AYUDA */
 
 @media screen and (max-width:991px){
@@ -438,7 +469,7 @@ footer p{
         margin-right: 20px;
     }
     /*PAGINA INICIO*/
-    .carousel{
+    .carousel-inicio{
         width: 100%;
         margin-top: 120px;
         margin-bottom: 30px;
@@ -463,9 +494,21 @@ footer p{
         justify-content: start;
         flex-direction: row;
      }
+      /*PAGINA PROYECTOS*/
+    .contenedorproyecto__cards{
+        width: 90%;
+    }
+    .project-example-first{
+        width: 100%;
+
+    }
+    .carousel-proyecto{
+        width: 100%;
+    }
      /* PAGINA NOVEDADES*/ 
      .galeria__cards{
         margin: 20px;
+        margin-top: 10px;
     }
       /*PAGINA CONTACTO*/
       .contacto{
@@ -473,32 +516,52 @@ footer p{
       }
       .contacto-nombres{
         flex-direction: column;
+        width: 93%;
       }
-      .contacto__container iframe{
-        width: 100%;
-
-    }
-    .contacto__formulario{
+      .contacto__formulario{
+        width: 90%;
+      }
+      .textarea{
+        width: 90%;
+      }
+      .contacto__formulario input{
         width: 90%;
     }
-  
-}
-@media screen and (max-width:420px){
-    /*PAGINA PROYECTOS*/
-    .contenedorproyecto__cards{
-        width: 350px;
+      .contacto__container iframe{
+        width: 100%;
     }
+    /* PAGINA AYUDA */
+    .project-ayuda{
+        width: 90%;
+
+     }
+     .seccion-ayuda p{
+        width: 90%;
+     }
+   }
+@media screen and (max-width:420px){
      /* PAGINA NOVEDADES*/ 
      .galeria{
         margin-top: 0;
      }
      .galeria__cards{
-        margin-top: 40px;
+        margin-top: 20px;
         padding: 20px;
     }
     footer ul{
         display: none;
     }
-    
-  
+    .contacto-nombres{
+        flex-direction: column;
+        width: 93%;
+      }
+      .contacto__formulario{
+        width: 90%;
+      }
+      .textarea{
+        width: 90%;
+      }
+      .contacto__formulario input{
+        width: 90%;
+    }
 }
