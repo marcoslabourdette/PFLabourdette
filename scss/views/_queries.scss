@@ -1,0 +1,87 @@
+@media screen and (max-width:991px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        .logo{
+            margin-right: 20px;
+        }
+    }
+  
+    /*PAGINA INICIO*/
+    .carousel-inicio{
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .row{
+        h4{margin-top: 40px;
+        }
+        h5{
+        margin-top: 30px;
+        }
+        img{
+        margin-top: 10px;
+        }
+    }
+    #inicio{
+      margin-top: 60px;
+    }
+    .video iframe{
+        width: 70%;
+    }
+    .redsocial{
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+     }
+      /*PAGINA PROYECTOS*/
+    .project-example-first{
+        width: 100%;
+
+    }
+    .carousel-proyecto{
+        width: 100%;
+    }
+     /* PAGINA NOVEDADES*/ 
+     .galeria{
+        gap: 150px;
+     }
+      /*PAGINA CONTACTO*/
+      .contacto{
+        flex-direction: column;
+      }
+      .contacto-nombres{
+        flex-direction: column;
+        width: 93%;
+      }
+
+      .textarea{
+        width: 90%;
+      }
+      .contacto__formulario{
+        input{    
+            width: 70%;
+        }
+        }
+        .contacto__container iframe{
+            width: 100%;
+        }
+    /* PAGINA NOSOTROS */
+    .nosotroscontenido img{
+        width: 380px;
+    }
+    .nosotroscaracteristicas img{
+        width: 380px;
+    }
+     footer{
+        height: 470px;
+        .fa-dog{
+            margin-bottom: 20px;
+        }
+     }
+    }
+@media screen and (max-width:420px){
+    footer{
+        height: 520px;
+}
+}

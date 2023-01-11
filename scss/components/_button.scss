@@ -1,0 +1,15 @@
+.boton{
+    background-color: $primary;
+    margin-top: 15px;
+    color:$tertiary;
+    border: $borde;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 85px;
+    
+    &:hover{
+        color: $primary;
+        border: 1px solid rgb(8, 164, 236);
+        background-color: $tertiary;
+    }
+}

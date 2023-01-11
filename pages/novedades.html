@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--KEYWORDS Y DESCRIPTION-->
+    <meta name="keywords" content="noticias, novedades, razas, animales, información, ayuda">
+    <meta name="description" content="Todas las noticias y novedades más recientes en DoggyLand.">
     <title>Novedades | DoggyLand</title>
+    <!--FUENTES-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -39,16 +43,16 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./proyectos.html">Proyectos</a>
+                            <a class="nav-link" aria-current="page" href="./portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./novedades.html">Novedades</a>
+                            <a class="nav-link active" href="#novedades">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ayuda.html">Ayuda</a>
                         </li>
                         <div class="redsocial">
                             <li class="nav-item">
@@ -66,11 +70,11 @@
         </nav>
     </header>
     <main>
-        <h1>Novedades</h1>
+        <h1 id="novedades">Novedades</h1>
         <section>
             <div class="galeria">
                 <div class="galeria__cards" data-aos="fade-right">
-                    <img src="../assets/images/novedades3.jpg" alt="perro">
+                    <img src="../assets/images/novedades3.jpg" alt="perro dalmata jugando">
                     <h2>A Subtitle</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consequatur corrupti vitae atque,
                         amet aut, expedita, ab ullam reprehenderit eum similique. Repudiandae, facere? Possimus, numquam
@@ -80,7 +84,7 @@
                         beatae nam deleniti perferendis repudiandae sapiente?</p>
                 </div>
                 <div class="galeria__cards" data-aos="fade-right">
-                    <img src="../assets/images/novedad1.jpg" alt="perros">
+                    <img src="../assets/images/novedad1.jpg" alt="grupo de perritos">
                     <h2>A Subtitle</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consequatur corrupti vitae atque,
                         amet aut, expedita, ab ullam reprehenderit eum similique. Repudiandae, facere? Possimus, numquam
@@ -90,7 +94,7 @@
                         beatae nam deleniti perferendis repudiandae sapiente?.</p>
                 </div>
                 <div class="galeria__cards" data-aos="fade-right">
-                    <img src="../assets/images/golden.jpg" alt="perro">
+                    <img src="../assets/images/golden.jpg" alt="perro golden">
                     <h2>A Subtitle</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consequatur corrupti vitae atque,
                         amet aut, expedita, ab ullam reprehenderit eum similique. Repudiandae, facere? Possimus, numquam
@@ -103,21 +107,27 @@
         </section>
     </main>
     <footer>
-        <div class="redes-sociales">
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        <ul class="text-center">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./proyectos.html">Proyectos</a></li>
-            <li><a href="#novedades">Novedades</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./ayuda.html">Ayuda</a></li>
-        </ul>
-        <div>
-            <p>© Todos los derechos reservados.</p>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 footer-info">
+                    <h6>DOGGYLAND</h6>
+                    <a href="../index.html"><i class="fa-solid fa-dog"></i></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6>CONTACTANOS</h6>
+                    <p>Avenida Calle Falsa 123.<br>Buenos Aires, Argentina. <br> Teléfono: 22918938.<br> Email:
+                        doggyland@gmail.com</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <h6>REDES</h6>
+                    <div class="redes-sociales">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center footer-copy">© 2023 DoggyLand - All Rights Reserved</p>
     </footer>
     <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

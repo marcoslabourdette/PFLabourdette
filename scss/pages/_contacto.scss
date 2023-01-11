@@ -1,0 +1,67 @@
+.contacto{
+    @include centrarContenido;
+    flex-wrap: wrap;
+    gap: 110px;
+}
+.contacto__container__info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    i{
+        font-size: 35px;
+        color: $primary;
+        padding: 5px;
+        margin: 10px;
+    }
+    span{
+        font-family: Montserrat, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+.contacto__formulario{
+    @include centrarContenido;    
+    width: 600px;
+    padding:10px; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: $primary;
+    h2{
+        margin-bottom: 15px;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        border-bottom: $bordeabajo;
+    }
+    form{
+        @include centrarContenido;
+        flex-direction: column;
+        width: 100%;
+    }
+    input{
+        width: 70%;
+        font-size: 1rem;
+        font-family:'Helvetica', Arial, Lucida Grande, sans-serif; 
+        outline: none;
+        padding: 10px;
+        margin: 5px;
+}
+.contacto-nombres{
+    width: 72%;
+}
+.textarea{
+    outline: none;
+    resize: none;
+    font-size: 1rem;
+    font-family:'Helvetica', Arial, Lucida Grande, sans-serif; 
+    text-align: start;
+    width: 70%;
+    padding-left: 10px;
+    padding-top: 5px;
+    min-height: 220px;
+}
+@import "../components/button";
+}
+
+

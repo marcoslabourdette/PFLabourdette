@@ -1,0 +1,50 @@
+@import "../utilities/_mixins.scss";
+.grilla__cards{
+    @include centrarContenido;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: $tertiary;
+    font-family: Montserrat, sans-serif;
+    object-fit: cover;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .info{
+        @include centrarContenido;
+        flex-direction: column;
+        color: $tertiary;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: map-get($colores_extras, azul);
+        opacity: 0;
+        border-radius: 10px;
+        visibility: hidden;
+        transition: .5s;
+        a{
+            text-decoration: none;
+        }
+        h4{
+            color: $tertiary;
+            list-style: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+            transition: 1s;
+            &:hover{
+                color: $primary;
+            }
+        }
+
+    }
+    &:hover > .info{
+        opacity: 1;
+        visibility: visible;
+    }
+}

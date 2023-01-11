@@ -1,0 +1,20 @@
+/*BASE*/
+@import "./base/normalize";
+
+/*UTILITIES*/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+/*LAYOUTS*/
+@import "./layout/header";
+@import "./layout/footer";
+
+/*PAGES*/
+@import "./pages/home";
+@import"./pages/portfolio";
+@import "./pages/novedades";
+@import "./pages/nosotros";
+@import "./pages/contacto";
+
+/*VIEWS*/
+@import"./views/queries";

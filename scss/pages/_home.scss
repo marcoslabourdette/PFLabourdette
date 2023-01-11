@@ -1,0 +1,67 @@
+@import "../utilities/_mixins.scss";
+
+#inicio{
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+.carousel{
+    width: 80vw;
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+.inicio-subtitulo{
+        margin-top: 10px;
+        font-size: 25px;
+        text-align: start;
+}
+.img-inicio{
+    padding: 5px;
+}
+.seccion{
+    @include centrarContenido;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: $primary;
+    i{
+        font-size: 48px;
+        margin-top: 10px;
+    }
+    h6{
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .caja{
+        padding: 40px;
+    }
+}
+ 
+.seccion2{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    img{
+        width: 320px;
+    }
+    a{
+        margin-bottom: 50px;
+        text-decoration: none;
+        color: $tertiary;
+        background-color:$primary;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid $primary;
+        &:hover{
+            background-color: $tertiary;
+            color:$primary;
+            border: 2px solid $primary;
+        }
+    }
+    .row{
+        @include centrarContenido;
+        justify-items: center;
+        gap: 30px;   
+}
+}

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda | DoggyLand</title>
+    <!--KEYWORDS Y DESCRIPTION-->
+    <meta name="keywords" content="trabajo, equipo, cuidado canino, salud animal">
+    <meta name="description" content="Caracteristicas de nuestro equipo y nuesta forma de trabajar en DoggyLand">
+    <title>Nosotros | DoggyLand</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -14,12 +17,13 @@
     <!--CDN BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!--CSS-->
+    <!--CSS ANIMATION SCROLL-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--CSS LOCAL-->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="icon" href="../assets/images/logo1.png">
 </head>
 <body>
-    <!--EMPIEZA MENU RESPONSIVE BOOTSTRAP --->
     <header>
         <div class="logo">
             <a href="../index.html"><img src="../assets/images/logo1.png" alt="logo"></a>
@@ -38,16 +42,16 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./proyectos.html">Proyectos</a>
+                            <a class="nav-link" aria-current="page" href="./portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./novedades.html">Novedades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link active" href="#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#ayuda">Ayuda</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                         <div class="redsocial">
                             <li class="nav-item">
@@ -64,53 +68,56 @@
             </div>
         </nav>
     </header>
-    <!--TERMINA MENU RESPONSIVE BOOTSTRAP-->
-    <main>
-        <h1 id="ayuda">Ayuda</h1>
-        <section>
-            <div class="seccion-ayuda">
-                <h2 class="project-ayuda">¿Lorem ipsum dolor, sit amet consectetur?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto ut omnis error culpa esse ullam
-                    nisi veniam facere libero, ratione, neque alias recusandae perferendis illum tempore eius?
-                    Architecto, aliquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos dolorum
-                    unde recusandae vero consectetur ipsa quidem quaerat debitis itaque amet! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Dicta ipsa maxime incidunt, suscipit, vel magnam quo consequatur non
-                    distinctio, ut cum nam rerum! Sapiente quidem eaque velit suscipit doloremque voluptatem sit
-                    mollitia, earum, asperiores temporibus reiciendis unde aliquam, dicta commodi quam officiis! Ratione
-                    placeat optio reiciendis possimus aliquam officia quae Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Maiores veritatis id esse ducimus! Quod iste sit, eos et non possimus! Lorem ipsum
-                    dolor sit, amet consectetur adipisicing elit. Excepturi, delectus.
-                </p>
-                <div class="text-start">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        <li>Lorem ipsum dolor sit amet consecteturelit. Libero, natus!</li>
-                        <li>Lorem ipsum dolor sit amet consectetur.</li>
-                        <li>Lorem ipsum dolor sit amet Adipisci accusantium ab illum?</li>
-                    </ul>
+    <main class="d-flex justify-content-center">
+        <h1 id="nosotros">Nosotros</h1>
+        <section class="nosotroscontenido" data-aos="fade-right">
+                <div class="nosotroscontenido__texto">
+                    <h2>¿QUIENES SOMOS?</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque laboriosam suscipit labore sint quasi nisi, ad fugit illum aut quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum hic voluptatum reiciendis ut dolorum?.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, blanditiis corporis fugit dolore nulla eos commodi vero suscipit nisi mollitia?.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae omnis non cupiditate saepe laudantium explicabo nihil laborum, officiis nobis voluptatem.
+                    </p>
+                    <a href="./contacto.html">Encontranós acá</a>
                 </div>
+                <div>
+                <img src="../assets/images/nosotros.jpg" alt="una persona con su mascota">
+                </div>
+        </section>
+        <section class="nosotroscaracteristicas" data-aos="fade-right">
+            <img src="../assets/images/nosotros2.jpg" alt="perro dando la mano">
+            <div>
+            <h3>Caracteristicas de equipo:</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+            </ul>
             </div>
         </section>
     </main>
     <!--EMPIEZA PIE DE PAGINA-->
-    <footer class="footer">
-        <div class="redes-sociales">
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        <ul class="text-center">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./proyectos.html">Proyectos</a></li>
-            <li><a href="./novedades.html">Novedades</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="#ayuda">Ayuda</a></li>
-        </ul>
-        <div>
-            <p>© Todos los derechos reservados.</p>
-        </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 footer-info">
+                    <h6>DOGGYLAND</h6>
+                    <a href="../index.html"><i class="fa-solid fa-dog"></i></a> 
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h6>CONTACTANOS</h6>
+                    <p>Avenida Calle Falsa 123.<br>Buenos Aires, Argentina. <br> Teléfono: 22918938.<br> Email:
+                        doggyland@gmail.com</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <h6>REDES</h6>
+                    <div class="redes-sociales">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center footer-copy">© 2023 DoggyLand - All Rights Reserved</p>
     </footer>
     <!--TERMINA PIE DE PAGINA-->
     <!--BOOTSTRAP JS-->

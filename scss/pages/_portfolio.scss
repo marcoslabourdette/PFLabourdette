@@ -1,0 +1,59 @@
+@import "../layout/grid";
+@import "../components/cards";
+
+
+.carousel-proyecto{
+    width: 70%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-example-first{
+    margin-top: 80px;
+    margin-bottom: 0;
+    color: $tertiary;
+    background-color: $primary;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 70%;
+}
+/*Pagina proyecto de ejemplo*/
+.project-example{
+    margin-bottom: 0;
+    color: white;
+    background-color: $primary;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+}
+.project-info{
+    margin-top: 30px;
+    .title{
+        font-size: 25px;
+        color: $primary;
+        font-weight: bold;
+    }
+    .parrafo{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+}
+.project-img{
+    margin-top: 50px;
+}
+
+
+
