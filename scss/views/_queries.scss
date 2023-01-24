@@ -83,11 +83,17 @@
     }
 @media screen and (max-width:420px){
     .nosotroscontenido img{
-        width: 300px;
+        width: 350px;
     }
-    .nosotroscaracteristicas img{
-        width: 300px;
-    }footer{
+    .nosotroscaracteristicas{
+    h3{
+     font-size:20px;   
+    }
+    padding: 10px;
+    img{width: 350px;
+      }
+    }
+    footer{
         height: 520px;
         .redes-sociales a{
             padding-right: 30px;

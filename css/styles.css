@@ -496,9 +496,13 @@ footer {
 
 @media screen and (max-width: 420px) {
   .nosotroscontenido img {
-    width: 300px; }
-  .nosotroscaracteristicas img {
-    width: 300px; }
+    width: 350px; }
+  .nosotroscaracteristicas {
+    padding: 10px; }
+    .nosotroscaracteristicas h3 {
+      font-size: 20px; }
+    .nosotroscaracteristicas img {
+      width: 350px; }
   footer {
     height: 520px; }
     footer .redes-sociales a {
