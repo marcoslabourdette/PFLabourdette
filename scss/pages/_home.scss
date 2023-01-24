@@ -1,18 +1,17 @@
 @import "../utilities/_mixins.scss";
 
-#inicio{
-    margin-top: 10px;
-    margin-bottom: 70px;
-}
 .carousel{
     width: 80vw;
     margin-top: 70px;
-    margin-bottom: 110px;
+    margin-bottom: 170px;
 }
-.inicio-subtitulo{
+#inicio{
         margin-top: 10px;
         font-size: 25px;
         text-align: start;
+        margin-bottom: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
 }
 .img-inicio{
     padding: 5px;

@@ -1,7 +1,7 @@
 .contacto{
     @include centrarContenido;
     flex-wrap: wrap;
-    gap: 110px;
+    gap: 40px;
 }
 .contacto__container__info{
         display: flex;
@@ -58,6 +58,7 @@
     text-align: start;
     width: 70%;
     padding-left: 10px;
+    margin-top: 5px;
     padding-top: 5px;
     min-height: 220px;
 }

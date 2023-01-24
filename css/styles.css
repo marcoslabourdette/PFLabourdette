@@ -6,7 +6,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 115px; }
+  scroll-padding: 200px; }
 
 body {
   font-family: 'Open Sans',sans-serif; }
@@ -21,7 +21,7 @@ main {
     margin-top: 130px;
     margin-bottom: 50px; }
 
-h1, h2, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat',sans-serif;
   font-weight: bold;
   margin-bottom: 10px; }
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, span {
 /*Bordes*/
 /*Colores extras*/
 /*LAYOUTS*/
-h1, h2, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat',sans-serif;
   font-weight: bold;
   margin-bottom: 10px; }
@@ -60,6 +60,9 @@ header {
       color: #000; }
     header .logo img {
       width: 50px; }
+    header .logo span {
+      font-family: 'Montserrat',sans-serif;
+      font-weight: bold; }
   header .navbar li {
     list-style: none;
     display: inline;
@@ -112,19 +115,18 @@ footer {
     margin-top: 10px; }
 
 /*PAGES*/
-#inicio {
-  margin-top: 10px;
-  margin-bottom: 70px; }
-
 .carousel {
   width: 80vw;
   margin-top: 70px;
-  margin-bottom: 110px; }
+  margin-bottom: 170px; }
 
-.inicio-subtitulo {
+#inicio {
   margin-top: 10px;
   font-size: 25px;
-  text-align: start; }
+  text-align: start;
+  margin-bottom: 0;
+  margin-bottom: 10px;
+  margin-top: 10px; }
 
 .img-inicio {
   padding: 5px; }
@@ -280,18 +282,21 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  align-items: baseline;
+  gap: 40px;
   margin-top: 30px; }
 
 .galeria__cards {
   display: flex;
+  margin-bottom: 50px;
   justify-content: center;
   flex-direction: column;
   width: 400px;
   height: 500px; }
 
 .galeria__cards h2 {
-  font-size: 25px;
+  margin-top: 20px;
+  font-size: 23px;
   text-align: center;
   border-bottom: 3px solid #08a4ec; }
 
@@ -323,11 +328,15 @@ footer {
     text-decoration: none;
     background-color: #fff;
     color: #08a4ec;
+    border: 1px solid #08a4ec;
+    border-radius: 10px;
     font-weight: bold;
     text-align: center;
     transition: .5s; }
     .nosotroscontenido__texto a:hover {
-      padding: 9px; }
+      color: #fff;
+      background-color: #08a4ec;
+      border: 1px solid #fff; }
 
 .nosotroscaracteristicas {
   display: flex;
@@ -344,17 +353,20 @@ footer {
     font-size: 25px;
     padding-left: 10px;
     margin-bottom: 20px;
-    color: #08a4ec; }
+    color: #08a4ec;
+    text-decoration: underline; }
   .nosotroscaracteristicas li {
     margin-bottom: 10px;
     padding: 5px; }
+    .nosotroscaracteristicas li b {
+      color: #08a4ec; }
 
 .contacto {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 110px; }
+  gap: 40px; }
 
 .contacto__container__info {
   display: flex;
@@ -409,6 +421,7 @@ footer {
     text-align: start;
     width: 70%;
     padding-left: 10px;
+    margin-top: 5px;
     padding-top: 5px;
     min-height: 220px; }
   .contacto__formulario .boton {
@@ -434,18 +447,17 @@ footer {
   /*PAGINA INICIO*/
   .carousel-inicio {
     width: 100%;
-    margin-top: 80px;
-    margin-bottom: 30px; }
+    margin-top: 90px;
+    margin-bottom: 80px; }
+  #inicio {
+    margin-top: 40px;
+    margin-bottom: 15px; }
   .row h4 {
     margin-top: 40px; }
   .row h5 {
     margin-top: 30px; }
   .row img {
     margin-top: 10px; }
-  #inicio {
-    margin-top: 60px; }
-  .video iframe {
-    width: 70%; }
   .redsocial {
     display: flex;
     justify-content: start;
@@ -457,7 +469,9 @@ footer {
     width: 100%; }
   /* PAGINA NOVEDADES*/
   .galeria {
-    gap: 150px; }
+    gap: 40px; }
+  .galeria__cards {
+    padding: 10px; }
   /*PAGINA CONTACTO*/
   .contacto {
     flex-direction: column; }
@@ -472,14 +486,20 @@ footer {
     width: 100%; }
   /* PAGINA NOSOTROS */
   .nosotroscontenido img {
-    width: 380px; }
+    width: 450px; }
   .nosotroscaracteristicas img {
-    width: 380px; }
+    width: 450px; }
   footer {
     height: 470px; }
     footer .fa-dog {
       margin-bottom: 20px; } }
 
 @media screen and (max-width: 420px) {
+  .nosotroscontenido img {
+    width: 300px; }
+  .nosotroscaracteristicas img {
+    width: 300px; }
   footer {
-    height: 520px; } }
+    height: 520px; }
+    footer .redes-sociales a {
+      padding-right: 30px; } }

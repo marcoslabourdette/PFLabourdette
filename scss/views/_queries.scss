@@ -10,8 +10,12 @@
     /*PAGINA INICIO*/
     .carousel-inicio{
         width: 100%;
-        margin-top: 80px;
-        margin-bottom: 30px;
+        margin-top: 90px;
+        margin-bottom: 80px;
+    }
+    #inicio{
+        margin-top: 40px;
+        margin-bottom: 15px;
     }
     .row{
         h4{margin-top: 40px;
@@ -22,12 +26,6 @@
         img{
         margin-top: 10px;
         }
-    }
-    #inicio{
-      margin-top: 60px;
-    }
-    .video iframe{
-        width: 70%;
     }
     .redsocial{
         display: flex;
@@ -43,9 +41,12 @@
         width: 100%;
     }
      /* PAGINA NOVEDADES*/ 
-     .galeria{
-        gap: 150px;
-     }
+    .galeria{
+        gap: 40px;
+    }
+     .galeria__cards{
+        padding: 10px;
+    }
       /*PAGINA CONTACTO*/
       .contacto{
         flex-direction: column;
@@ -68,10 +69,10 @@
         }
     /* PAGINA NOSOTROS */
     .nosotroscontenido img{
-        width: 380px;
+        width: 450px;
     }
     .nosotroscaracteristicas img{
-        width: 380px;
+        width: 450px;
     }
      footer{
         height: 470px;
@@ -81,7 +82,18 @@
      }
     }
 @media screen and (max-width:420px){
-    footer{
+    .nosotroscontenido img{
+        width: 300px;
+    }
+    .nosotroscaracteristicas img{
+        width: 300px;
+    }footer{
         height: 520px;
+        .redes-sociales a{
+            padding-right: 30px;
+       
+        }
+    }
 }
-}
+
+  

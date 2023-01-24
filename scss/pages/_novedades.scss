@@ -3,18 +3,21 @@
 .galeria{
     @include centrarContenido;
     flex-wrap: wrap;
-    gap: 20px;
+    align-items: baseline;
+    gap: 40px;
     margin-top: 30px;
 }
 .galeria__cards{
     display: flex;
+    margin-bottom: 50px;
     justify-content: center;
     flex-direction: column;
     width: 400px;
     height: 500px;
 }
 .galeria__cards h2{
-    font-size: 25px;
+    margin-top: 20px;
+    font-size: 23px;
     text-align: center;
     border-bottom: 3px solid $primary;   
 }
